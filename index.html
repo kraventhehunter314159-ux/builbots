@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Bots | AI, Robotics & Coding Platform</title>
+    <meta name="description"
+        content="A next-generation robotics and coding learning platform for school students. Learn AI, Arduino, and electronics through hands-on projects with Build Bots.">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Decorative Memphis Shapes -->
+    <div class="memphis-shape shape-circle-1"></div>
+    <div class="memphis-shape shape-circle-2"></div>
+    <div class="memphis-shape shape-dots" style="top: 10%; right: 5%;"></div>
+    <div class="memphis-shape shape-dots" style="bottom: 20%; left: 5%;"></div>
+    <div class="memphis-shape shape-zigzag-1">
+        <svg viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 10 L20 0 L40 20 L60 0 L80 20 L100 10" stroke="#facc15" stroke-width="4"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+    <div class="memphis-shape shape-zigzag-2">
+        <svg viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 10 L20 0 L40 20 L60 0 L80 20 L100 10" stroke="#000000" stroke-width="4"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="build-bots-logo.jpg" alt="Build Bots" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Programs</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Grades 5–12</div>
+                <h1 class="headline">Explore AI, Robotics & <span>Electronics</span></h1>
+                <p class="subheading">Unleash your creativity with hands-on learning through Arduino, robotics kits, and
+                    practical coding. Build the future, today with <strong>Build Bots</strong>.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Join a Workshop <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="graphic-container">
+                    <!-- Robotic Illustration Elements -->
+                    <div class="glass-card element-1">
+                        <i class="fa-solid fa-microchip icon-purple"></i>
+                        <span>Microcontrollers</span>
+                    </div>
+                    <div class="glass-card element-2">
+                        <i class="fa-solid fa-code icon-blue"></i>
+                        <span>Code & Logic</span>
+                    </div>
+                    <div class="glass-card element-3">
+                        <i class="fa-solid fa-gear icon-pink spin"></i>
+                    </div>
+                    <!-- Added elements -->
+                    <div class="glass-card element-4">
+                        <i class="fa-solid fa-satellite-dish icon-orange" style="color:#f97316;"></i>
+                        <span>IoT & Sensors</span>
+                    </div>
+                    <div class="glass-card element-5">
+                        <i class="fa-solid fa-gear icon-purple spin-fast"></i>
+                    </div>
+                    <div class="glass-card element-6">
+                        <i class="fa-solid fa-gear icon-blue spin-reverse"></i>
+                    </div>
+                    <div class="glass-card element-7">
+                        <i class="fa-solid fa-brain icon-orange" style="color:#ef4444;"></i>
+                        <span>AI Systems</span>
+                    </div>
+                    <div class="hero-robot-wrapper pulse">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix&backgroundColor=transparent"
+                            alt="Robot Mascot" class="hero-robot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="image-wrapper glass-effect image-wrapper-filled">
+                    <img src="about-img.jpg" alt="Mentoring innovators" class="real-about-image">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Empowering the Innovators of Tomorrow</h2>
+                <p>We teach practical STEM skills that go beyond textbooks. At Build Bots, students dive into the world
+                    of technology by building things that matter.</p>
+                <ul class="about-highlights">
+                    <li><i class="fa-solid fa-robot"></i> <strong>Robotics:</strong> Design and assemble real working
+                        robots.</li>
+                    <li><i class="fa-solid fa-microchip"></i> <strong>Arduino & IoT:</strong> Connect the physical world
+                        using sensors and code.</li>
+                    <li><i class="fa-solid fa-lightbulb"></i> <strong>Problem-Solving:</strong> Apply logic to craft
+                        innovative solutions.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center">Our Programs</h2>
+                <p class="section-subtitle text-center">Structured learning paths tailored by grade level.</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course 0 -->
+                <div class="course-card fade-in">
+                    <div class="card-icon gradient-blue" style="background: var(--rainbow-gradient)">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <span class="grade-pill">Grades 3-4</span>
+                    <h3>Junior Innovators</h3>
+                    <p>A fun, interactive introduction to STEM using building blocks, simple logic games, and basic
+                        mechanics to spark early curiosity.</p>
+                    <a href="#contact" class="link-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <!-- Course 1 -->
+                <div class="course-card fade-in">
+                    <div class="card-icon gradient-blue">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <span class="grade-pill">Grades 5-7</span>
+                    <h3>Beginner Robotics</h3>
+                    <p>Introduction to circuits, simple motors, and block-based programming. Build your first moving
+                        functional robot from scratch.</p>
+                    <a href="#contact" class="link-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <!-- Course 2 -->
+                <div class="course-card fade-in">
+                    <div class="card-icon gradient-purple">
+                        <i class="fa-brands fa-usb"></i>
+                    </div>
+                    <span class="grade-pill">Grades 8-10</span>
+                    <h3>Arduino & Electronics</h3>
+                    <p>Dive deep into C++ programming with Arduino. Learn to manipulate sensors, displays, and actuators
+                        to build smart devices.</p>
+                    <a href="#contact" class="link-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <!-- Course 3 -->
+                <div class="course-card fade-in">
+                    <div class="card-icon gradient-mix">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <span class="grade-pill">Grades 10-12</span>
+                    <h3>AI & Automation Projects</h3>
+                    <p>Advanced electronics, Python programming, computer vision, and machine learning basics to create
+                        autonomous systems.</p>
+                    <a href="#contact" class="link-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center">Student Showcase</h2>
+                <p class="section-subtitle text-center">Real-world projects built by our incredible students.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img project-img-filled bg-p1">
+                        <img src="smart-parking.jpg" alt="Smart Parking System" class="real-project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Parking System</h3>
+                        <p>Infrared sensors detecting empty slots and updating an LCD display automatically.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img project-img-filled bg-p2">
+                        <img src="smart-dustbin.png" alt="Smart Dustbin" class="real-project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Dustbin</h3>
+                        <p>An automated trash bin that opens its lid when it detects hand motion using an ultrasonic
+                            sensor.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img project-img-filled bg-p3">
+                        <img src="line-follower.jpg" alt="Line Following Robot" class="real-project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Line Following Robot</h3>
+                        <p>A chassis that uses IR sensors and motor drivers to flawlessly follow a designated black
+                            track via code.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img project-img-filled bg-p4">
+                        <img src="robotic-arm.jpg" alt="Robotic Arm" class="real-project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Robotic Arm</h3>
+                        <p>A 4-axis servo-driven robotic arm controlled by potentiometers to pick and place objects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center">Why Learn With Us?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon shape-1"><i class="fa-solid fa-hammer"></i></div>
+                    <h4>Hands-on Learning</h4>
+                    <p>Less theory, more doing. Every concept is tied directly to a practical build.</p>
+                    <div class="feature-img-wrapper">
+                        <img src="why-us-1.jpg" alt="Hands-on Learning">
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon shape-2"><i class="fa-solid fa-earth-americas"></i></div>
+                    <h4>Real-World Projects</h4>
+                    <p>Solve relevant problems, from automation to smart home prototypes.</p>
+                    <div class="feature-img-wrapper">
+                        <img src="why-us-2.jpg" alt="Real-World Projects">
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon shape-3"><i class="fa-solid fa-face-smile"></i></div>
+                    <h4>Beginner Friendly</h4>
+                    <p>No prior coding experience? No problem. We start from the absolute basics.</p>
+                    <div class="feature-img-wrapper">
+                        <img src="why-us-3.jpg" alt="Beginner Friendly">
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon shape-4"><i class="fa-solid fa-rocket"></i></div>
+                    <h4>Innovation Focused</h4>
+                    <p>We nurture creativity, encouraging students to invent their own mechanisms.</p>
+                    <div class="feature-img-wrapper">
+                        <img src="why-us-4.jpg" alt="Innovation Focused">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-wrapper glass-effect fade-in">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Ready to jumpstart your robotics journey? Contact us today to enroll or inquire about our
+                        programs.</p>
+
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <span>+91 9074505292<br>+91 8281873550</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fa-brands fa-whatsapp contact-icon"></i>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <span>+44 7853733791</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fa-regular fa-envelope contact-icon"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <span>info@buildbots.in</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class="fa-solid fa-globe contact-icon"></i>
+                            <div>
+                                <h5>Website</h5>
+                                <span><a href="https://www.buildbots.in" target="_blank"
+                                        style="color: inherit; text-decoration: underline;">https://www.buildbots.in</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-memphis-shape"></div>
+                </div>
+                <div class="contact-form">
+                    <form id="enrollmentForm" action="https://formspree.io/f/xbdzgjyr" method="POST">
+
+                        <input type="hidden" name="_subject" value="New enquiry from BuildBots website">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="I'm interested in the Arduino program..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="build-bots-logo.jpg" alt="Build Bots" class="brand-logo footer-brand">
+                </div>
+                <p>&copy; 2026 Build Bots Platform. All rights reserved. Inspiring the next generation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
