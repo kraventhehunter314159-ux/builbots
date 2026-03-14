@@ -2,14 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const closeMenu = document.querySelector('.close-menu');
     const links = document.querySelectorAll('.nav-links a');
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.innerHTML = navLinks.classList.contains('active') 
-                ? '<i class="fa-solid fa-xmark"></i>' 
-                : '<i class="fa-solid fa-bars"></i>';
+            navLinks.classList.add('active');
+        });
+    }
+
+    if (closeMenu) {
+        closeMenu.addEventListener('click', () => {
+            navLinks.classList.remove('active');
         });
     }
 
@@ -25,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -62,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -100px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return;
             entry.target.classList.add('visible');
@@ -76,14 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Formspree Form Submission Handler
     const form = document.getElementById('enrollmentForm');
-    
+
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
-            
+
             btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
             btn.disabled = true;
 
@@ -97,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'Accept': 'application/json'
                     }
                 });
-                
+
                 if (response.ok) {
                     alert('Thank you for reaching out! We will get back to you soon.');
                     form.reset();
@@ -117,10 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
+            if (targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
-            if(targetElement) {
+            if (targetElement) {
                 e.preventDefault();
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
